@@ -2,17 +2,17 @@ pipeline {
     agent any
     
     stages {
-        stage ('Install Dependencies') {
+        stage('Install Dependencies') {
             steps {
                 script {
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
-        stage ('Run Tests') {
+        stage('Run Tests') {
             steps {
                 script {
-                    sh 'npm test'
+                    bat 'npm test'
                 }
             }
         }
@@ -32,6 +32,6 @@ pipeline {
         //             }
         //         }
         //     }
-        
+        }
     }
 }
