@@ -1,20 +1,13 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Pipeline Node using Jenkins
+This repository demonstrates the use of Jenkins for setting up a CI/CD pipeline for a Node.js application.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Overview
+Jenkins is used to automate the testing, building, and deployment of this Node.js application. The pipeline is defined using a `jenkinsfile`, which allows for fine-grained control over the CI/CD process.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# CI/CD Pipeline
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Jenkins Pipeline
+The Jenkins pipeline is defined in the `jenkinsfile` located in the root directory of the repository. This pipeline includes the following stages:
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- **Checkout Code**: Clones the repository from the source control.
+- **Build Docker Image**: Builds a Docker image for the application.
