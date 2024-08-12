@@ -2,15 +2,14 @@ pipeline {
     agent any
     
     stages {
-         stages {
-        stage('Install Dependencies') {
+        stage ('Install Dependencies') {
             steps {
                 script {
                     sh 'npm install'
                 }
             }
         }
-        stage('Run Tests') {
+        stage ('Run Tests') {
             steps {
                 script {
                     sh 'npm test'
@@ -33,6 +32,6 @@ pipeline {
         //             }
         //         }
         //     }
-        }
+        
     }
 }
