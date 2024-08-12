@@ -2,7 +2,7 @@
 This repository demonstrates the use of Jenkins for setting up a CI/CD pipeline for a Node.js application.
 
 # Overview
-Jenkins is used to automate the testing, building, and deployment of this Node.js application. The pipeline is defined using a `Jenkinsfile`, which allows for fine-grained control over the CI/CD process.
+Jenkins is used to automate the testing, building, and deployment of this Node.js application. The pipeline is defined using a `jenkinsfile`, which allows for fine-grained control over the CI/CD process.
 
 # CI/CD Pipeline
 
